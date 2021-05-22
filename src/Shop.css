@@ -1,0 +1,5 @@
+.ShopItemDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 33%;
+}
