@@ -2,10 +2,13 @@ import React from 'react';
 import { useState } from 'react';
 
 const ShopItem = (props) => {
+  const { item: name, imageURL, price, descripton } = props;
+
   // name
   // image
   // price
   // description
+  // details page?
 
   // quantity input
   // add to cart button
@@ -24,9 +27,9 @@ const ShopItem = (props) => {
 
   return (
     <div className="ShopItem">
-      <title>{ props.name }</title>
-      <img src={ props.imageURL } alt={ props.name } />
-      <p>${ props.price }</p>
+      <title>{ props.item.name }</title>
+      <img src={ props.item.imageURL } alt={ props.item.name } />
+      <p>${ props.item.price }</p>
       <label>Quantity <input type="text" onChange={verifyQuantity} value={input} /></label>
       <button>Add { quantity } to cart</button>
 
