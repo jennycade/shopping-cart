@@ -1,0 +1,17 @@
+.Navbar ul {
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(9, 9, 51);
+  color: white;
+}
+.Navbar li {
+  padding: 1rem;
+}
+.Navbar a, .Navbar a:visited {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
