@@ -22,8 +22,8 @@ const ShopItem = (props) => {
   return (
     <div className="ShopItem">
       <img src={ imageURL } alt={ name } />
-      <p class="itemName">{ name }</p>
-      <p class="itemPrice">${ price }</p>
+      <p className="itemName">{ name }</p>
+      <p className="itemPrice">${ price }</p>
       <label>Quantity <input type="text" onChange={verifyQuantity} value={input} /></label>
       <button>Add { quantity } to cart</button>
 
