@@ -7,9 +7,9 @@ const Navbar = (props) => {
   return (
     <nav className="Navbar">
       <ul>
-        <Link to="/"><li>Home</li></Link>
-        <Link to="/shop"><li>Shop</li></Link>
-        <Link to="/cart"><li>Cart ({ props.numItems } items - ${props.total})</li></Link>
+        <Link to="/shopping-cart/"><li>Home</li></Link>
+        <Link to="/shopping-cart/shop"><li>Shop</li></Link>
+        <Link to="/shopping-cart/cart"><li>Cart ({ props.numItems } items - ${props.total})</li></Link>
       </ul>
     </nav>
   );
