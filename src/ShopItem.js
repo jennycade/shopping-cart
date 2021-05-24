@@ -19,11 +19,11 @@ const ShopItem = (props) => {
     
   }
 
-  // TODO: set unique key for display === 'cart'
-
   const itemButton = () => {
     if (props.display === 'cart') {
-      return <button>Remove from cart</button>
+      return <button onClick={ () => {
+        props.removeFromCart(props.item.key);
+      } }>Remove from cart</button>
     }
     if (props.display === 'shop') {
       return (
