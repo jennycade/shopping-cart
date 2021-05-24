@@ -39,18 +39,24 @@ function App() {
     setCart(newCart);
   }
 
+  // TODO: Learn about how github pages and react-router-dom interact.
+  // https://jennycade.github.io/shopping-cart/ - navbar + blank
+  // click home --> https://jennycade.github.io/
+  // click shop --> https://jennycade.github.io/shop
+  // click cart --> https://jennycade.github.io/cart
+
   return (
     <Router>
       <div className="App">
         <Navbar numItems={cart.length} total={ getCartTotal() } />
         <Switch>
-          <Route path="/" exact>
+          <Route path="/shopping-cart/" exact>
             <Home />
           </Route>
-          <Route path="/shop" exact>
+          <Route path="/shopping-cart/shop" exact>
             <Shop addToCart={ addToCart } />
           </Route>
-          <Route path="/cart">
+          <Route path="/shopping-cart/cart">
             <Cart cartItems={ cart } removeFromCart={ removeFromCart } />
           </Route>
         </Switch>
