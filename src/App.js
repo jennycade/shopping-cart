@@ -13,6 +13,10 @@ function App() {
   const [cart, setCart] = useState([]);
   const [cartIndex, setCartIndex] = useState(0);
 
+  const getCartTotal = () => {
+    return cart.map(item => item.price).reduce((sum, value) => sum + value, 0);
+  }
+
   const addToCart = (item, qty) => {
     let newCart = [...cart];
     let newCartIndex = cartIndex;
@@ -31,14 +35,14 @@ function App() {
 
     let newCart = [...cart];
     newCart.splice(indexToRemove, 1);
-    
+
     setCart(newCart);
   }
 
   return (
     <Router>
       <div className="App">
-        <Navbar numItems={cart.length} />
+        <Navbar numItems={cart.length} total={ getCartTotal() } />
         <Switch>
           <Route path="/" exact>
             <Home />

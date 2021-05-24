@@ -9,7 +9,7 @@ const Navbar = (props) => {
       <ul>
         <Link to="/"><li>Home</li></Link>
         <Link to="/shop"><li>Shop</li></Link>
-        <Link to="/cart"><li>Cart ({ props.numItems })</li></Link>
+        <Link to="/cart"><li>Cart ({ props.numItems } items - ${props.total})</li></Link>
       </ul>
     </nav>
   );
