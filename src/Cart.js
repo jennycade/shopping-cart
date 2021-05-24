@@ -5,7 +5,6 @@ import ShopItem from './ShopItem';
 import './Cart.css';
 
 const Cart = (props) => {
-  console.log(props.cartItems);
 
   return (
     <div className="Cart">

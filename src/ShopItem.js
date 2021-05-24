@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './ShopItem.css'
 
 const ShopItem = (props) => {
-  const { item: { name, imageURL, price, descripton } } = props;
+  const { item: { name, imageURL, price } } = props;
 
   const [quantity, setQuantity] = useState(1);
   const [input, setInput] = useState('1');
