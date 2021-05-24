@@ -25,10 +25,10 @@ function App() {
             <Home />
           </Route>
           <Route path="/shop" exact>
-            <Shop />
+            <Shop addToCart={ addToCart } />
           </Route>
           <Route path="/cart">
-            <Cart test="test" />
+            <Cart />
           </Route>
         </Switch>
       </div>

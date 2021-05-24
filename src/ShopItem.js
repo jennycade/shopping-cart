@@ -25,7 +25,9 @@ const ShopItem = (props) => {
       <p className="itemName">{ name }</p>
       <p className="itemPrice">${ price }</p>
       <label>Quantity <input type="text" onChange={verifyQuantity} value={input} /></label>
-      <button>Add { quantity } to cart</button>
+      <button onClick={ () => {
+        props.addToCart(props.item);
+      } }>Add { quantity } to cart</button>
 
     </div>
   );

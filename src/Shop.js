@@ -10,7 +10,7 @@ const Shop = (props) => {
     <div className="Shop">
       <h1>Shop</h1>
       <div className="ShopItemDisplay">
-        { shopData.map(item => <ShopItem key={item.name} item={item} />) }
+        { shopData.map(item => <ShopItem key={item.name} item={item} addToCart={ props.addToCart } />) }
       </div>
     </div>
   );
