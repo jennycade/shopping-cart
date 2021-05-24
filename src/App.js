@@ -14,11 +14,17 @@ function App() {
   const [cartIndex, setCartIndex] = useState(0);
 
   const addToCart = (item, qty) => {
+    console.log(`App.addToCart() called ${qty} times.`);
+    let newCart = [...cart];
+    let newCartIndex = cartIndex;
     for (let i=0; i<qty; i++) {
-      const cartItem = {...item, key: cartIndex};
-      setCart([...cart, cartItem]);
-      setCartIndex(cartIndex + 1);
+      const cartItem = {...item, key: newCartIndex};
+      newCart = [...newCart, cartItem];
+      newCartIndex = newCartIndex + 1;
     }
+    // set state all at once
+    setCart(newCart);
+    setCartIndex(newCartIndex);
   }
 
   // TODO: write removeFromCart()
