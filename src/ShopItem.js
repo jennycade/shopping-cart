@@ -19,6 +19,8 @@ const ShopItem = (props) => {
     
   }
 
+  // TODO: add the right quantity!
+
   return (
     <div className="ShopItem">
       <img src={ imageURL } alt={ name } />

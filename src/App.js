@@ -28,7 +28,7 @@ function App() {
             <Shop addToCart={ addToCart } />
           </Route>
           <Route path="/cart">
-            <Cart />
+            <Cart cartItems={ cart } />
           </Route>
         </Switch>
       </div>
