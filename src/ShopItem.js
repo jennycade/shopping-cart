@@ -18,6 +18,23 @@ const ShopItem = (props) => {
     }
     
   }
+  // TODO: set unique key for display === 'cart'
+
+  const itemButton = () => {
+    if (props.display === 'cart') {
+      return <button>Remove from cart</button>
+    }
+    if (props.display === 'shop') {
+      return (
+        <div>
+          <label>Quantity <input type="text" onChange={verifyQuantity} value={input} /></label>
+          <button onClick={ () => {
+            props.addToCart(props.item);
+          } }>Add { quantity } to cart</button>
+        </div>
+      );
+    }
+  };
 
   // TODO: add the right quantity!
 
@@ -26,10 +43,7 @@ const ShopItem = (props) => {
       <img src={ imageURL } alt={ name } />
       <p className="itemName">{ name }</p>
       <p className="itemPrice">${ price }</p>
-      <label>Quantity <input type="text" onChange={verifyQuantity} value={input} /></label>
-      <button onClick={ () => {
-        props.addToCart(props.item);
-      } }>Add { quantity } to cart</button>
+      { itemButton() }
 
     </div>
   );

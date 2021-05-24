@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ShopItem from './ShopItem';
+
 import './Cart.css';
 
 const Cart = (props) => {
@@ -10,7 +12,9 @@ const Cart = (props) => {
       <h1>Cart</h1>
       <ul>
         { props.cartItems.map((item) => {
-          return (<li>{item.name}</li>);
+          return (
+            <ShopItem item={item} display='cart' />
+          );
         }) }
       </ul>
     </div>

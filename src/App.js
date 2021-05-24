@@ -16,6 +16,8 @@ function App() {
     setCart([...cart, item]);
   }
 
+  // TODO: write removeFromCart()
+
   return (
     <Router>
       <div className="App">
