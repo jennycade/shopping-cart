@@ -10,16 +10,26 @@ import Shop from './Shop';
 import Cart from './Cart';
 
 function App() {
-  // const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+  }
 
   return (
     <Router>
       <div className="App">
-        <Navbar numItems={5} />
+        <Navbar numItems={cart.length} />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/shop" exact component={Shop} />
-          <Route path="/cart" component={Cart} />
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/shop" exact>
+            <Shop />
+          </Route>
+          <Route path="/cart">
+            <Cart test="test" />
+          </Route>
         </Switch>
       </div>
     </Router>
