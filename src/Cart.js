@@ -12,7 +12,7 @@ const Cart = (props) => {
       <ul>
         { props.cartItems.map((item) => {
           return (
-            <ShopItem item={item} display='cart' />
+            <ShopItem item={item} key={item.key} display='cart' />
           );
         }) }
       </ul>

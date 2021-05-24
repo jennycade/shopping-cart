@@ -13,11 +13,12 @@ const ShopItem = (props) => {
     const input = e.target.value;
     setInput(input);
     const number = parseInt(input);
-    if (input >=1) {
+    if (input >= 1) {
       setQuantity(number);
     }
     
   }
+
   // TODO: set unique key for display === 'cart'
 
   const itemButton = () => {
@@ -29,7 +30,7 @@ const ShopItem = (props) => {
         <div>
           <label>Quantity <input type="text" onChange={verifyQuantity} value={input} /></label>
           <button onClick={ () => {
-            props.addToCart(props.item);
+            props.addToCart(props.item, quantity)
           } }>Add { quantity } to cart</button>
         </div>
       );

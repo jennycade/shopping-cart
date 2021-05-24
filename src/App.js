@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -11,9 +11,14 @@ import Cart from './Cart';
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [cartIndex, setCartIndex] = useState(0);
 
-  const addToCart = (item) => {
-    setCart([...cart, item]);
+  const addToCart = (item, qty) => {
+    for (let i=0; i<qty; i++) {
+      const cartItem = {...item, key: cartIndex};
+      setCart([...cart, cartItem]);
+      setCartIndex(cartIndex + 1);
+    }
   }
 
   // TODO: write removeFromCart()
