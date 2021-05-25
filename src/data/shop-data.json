@@ -6,9 +6,39 @@
     "description": "The eternal competitors have joined forces in an unstoppable team. 11 in x 11 in"
   },
   {
-    "name": "The Internet (scavenger hunt)",
+    "name": "Alchemy of Tales",
     "imageURL": "https://aaronzonka.com/wp-content/uploads/2018/11/alchmy-of-tails-less-layers-for-print-668x1024.jpg",
     "price": 35,
     "description": "Stories have a magic like nothing else. Especially when they come from magic potions. 11 in x 17 in"
+  },
+  {
+    "name": "The Internet (scavenger hunt)",
+    "imageURL": "http://aaronzonka.com/wp-content/uploads/2021/01/7.-the-internet-for-web-copy.jpg",
+    "price": 35,
+    "description": "The internet is a big place full of all sorts of nonsense. Test you knowledge of our beloved net by challenging yourself to a scavenger hunt."
+  },
+  {
+    "name": "Flying Monkey",
+    "imageURL": "http://aaronzonka.com/wp-content/uploads/2017/08/3.winged-monkey-final-copy.jpg",
+    "price": 35,
+    "description": "Who dosen't love those creepy monkeys from The Wizard of Oz? Especially when they are screaming while eating a fish."
+  },
+  {
+    "name": "pwr vol",
+    "imageURL": "http://aaronzonka.com/wp-content/uploads/2017/09/1.-pwr-vol.jpeg",
+    "price": 10,
+    "description": "Autonomous facial hair. The grating contradictions of existence. Unwanted brunch invitations. The struggles are plentiful in this philosophical netherworld imagined by Nick Scandy, illustrated by Aaron Zonka, and set to music via mini and the Bear's accompanying score. In PWR VOL, the frenetic rhythms, absurdist delusions, and cacophonous irrealities of modern life all find themselves pumped through full stacks of amplifiers, powerfully blasted at the maximum volume they deserve."
+  },
+  {
+    "name": "Danny DeVito is...",
+    "imageURL": "http://aaronzonka.com/wp-content/uploads/2017/09/danny_devito_is_11x17-print.jpg",
+    "price": 35,
+    "description": ""
+  },
+  {
+    "name": "Bay Area sports teams",
+    "imageURL": "http://aaronzonka.com/wp-content/uploads/2017/09/3.-bay-area-sports-11x17-print-.jpg",
+    "price": 35,
+    "description": "Watch as your favorite Bay Area teams try to beat one another in a brutal melee for the ages"
   }
  ]

@@ -1,5 +1,4 @@
 .ShopItemDisplay {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 33%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
